@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db200a1f64e8200ea9213391833759ca63ae0064f03c3e9521d0155fb1a45b7d
-size 301
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/GameModeBase.h"
+#include "DockerTestGameMode.generated.h"
+
+UCLASS(minimalapi)
+class ADockerTestGameMode : public AGameModeBase
+{
+	GENERATED_BODY()
+
+public:
+	ADockerTestGameMode();
+};
+
+
+

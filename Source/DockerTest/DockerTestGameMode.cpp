@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbe5bcecb4954df9f38abeabd367d99b4cdf42a8e41816296cb2be13dc3ce55b
-size 480
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "DockerTestGameMode.h"
+#include "DockerTestCharacter.h"
+#include "UObject/ConstructorHelpers.h"
+
+ADockerTestGameMode::ADockerTestGameMode()
+{
+	// set default pawn class to our Blueprinted character
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"));
+	if (PlayerPawnBPClass.Class != NULL)
+	{
+		DefaultPawnClass = PlayerPawnBPClass.Class;
+	}
+}

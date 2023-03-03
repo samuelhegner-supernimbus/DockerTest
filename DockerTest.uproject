@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6721b9d25a7af4dc2bb9caa0b2e544ffc4901006ee94e3bbddcf81889339b817
-size 224
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{8AAA1242-4880-F0BF-CD40-858FA91B6713}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "DockerTest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

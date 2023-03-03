@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7043bc345d759eff3f777b28e37546af98fae14b4176421ac0043fe5ee31c0ea
-size 351
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+using UnrealBuildTool;
+using System.Collections.Generic;
+
+public class DockerTestServerTarget : TargetRules
+{
+	public DockerTestServerTarget(TargetInfo Target) : base(Target)
+	{
+		Type = TargetType.Server;
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+		ExtraModuleNames.Add("DockerTest");
+	}
+}
